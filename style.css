@@ -1,43 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     /* background: linear-gradient(-45deg, #c1b2f2, #9254de, #f2c6ff, #C78CF6); */
     background: rgb(81, 37, 143);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    /* background-size: 400% 400%; */
+    /* animation: gradient 10s ease infinite; */
     color: #ffffff;
     text-align: center;
     padding: 0px;
     margin: 0px;
 }
 
-@keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
 a:link {
     color: white;
     background-color: transparent;
     text-decoration: none;
 }
+
 a:visited {
   color: pink;
   background-color: transparent;
   text-decoration: none;
 }
+
 a:hover {
   color: rgb(210, 112, 129);
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -55,31 +44,100 @@ img {
     max-width: 90%;
 }
 
+.aboutMi {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: fit-content;
+    max-width: 560px;
+  
+    border-radius: 8%;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  
+    text-align: center;
+}
+
+.content-card {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: fit-content;
+    max-width: 560px;
+  
+    border-radius: 10%;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  
+    text-align: center;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 250px;
+}
+
+.left {
+    width: 25%;
+}
+  
+.right {
+    width: 75%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .topnav {
     align-items: center;
     background-color: #9254de;
     overflow: hidden;
-    position: sticky;
-    padding: 0px 20px;
-    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#letterm {
+    text-align: center;
+    float: left;
+    margin: 10px 20px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 .topnav a {
-    float: left;
-    display: block;
+    float: right;
+    display: flex;
     color: #e0d8eb;
     padding: 14px 16px;
     text-align: center;
+    font-size: 17px;
 }
 
 .topnav a:hover {
     color: #ffffff;
   }
 
+.MeandFriend {
+    border-radius: 10%;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 600px;
+}
+
 .willowpillow {
     border-radius: 10%;
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;
     height: 100%;
-    max-height: 150px;
+    max-height: 200px;
 }
