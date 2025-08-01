@@ -139,13 +139,13 @@ a:hover {
 
 .status-container {
   position: absolute;
-  top: 5%;
-  right: -40%;
+  left: 110%;
+  /* right: -40%; */
   text-align: center;
   background-color: #c7c7c7;
   padding: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 30px;
+  padding-right: 30px;
   border-radius: 10%;
 }
 
@@ -199,7 +199,7 @@ a:hover {
 
 .bear {
   display: block;
-  width: 60px;
+  width: 80px;
   height: auto;
   margin: 0 auto;
 }
