@@ -1,10 +1,10 @@
 * {
-    box-sizing: border-box;
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  scroll-padding-top: 60px;
 }
 
 body {
@@ -14,24 +14,6 @@ body {
     padding: 0px;
     margin: 0px;
 }
-
-/* a:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgb(210, 112, 129);
-  background-color: transparent;
-  text-decoration: underline;
-} */
 
 h1 {
     padding-top: 1em;
@@ -87,7 +69,25 @@ img {
   padding: 16px 24px;
 }
 
-.aboutMe {
+a:link {
+    color: #6e2aad;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+  color: #6165d3;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(210, 112, 129);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.AboutMe {
     display: block;
     margin: auto;
     width: 50%;
@@ -104,34 +104,65 @@ img {
 }
 
 .content-card {
-    display: block;
-    position: relative;
-    margin: auto;
-    margin-top: 60px;
-    width: 50%;
-    height: fit-content;
-    max-width: 560px;
-    background-color: #c7c7c7;
-  
-    border-radius: 10%;
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-  
-    text-align: center;
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+  width: 50%;
+  height: fit-content;
+  max-width: 560px;
+  background-color: #c7c7c7;
+
+  border-radius: 10%;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+
+  text-align: center;
+}
+
+.content-block {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+  width: 80%;
+  height: fit-content;
+  background-color: #c7c7c7;
+
+  border-radius: 15%;
+  padding: 10px;
+
+  /* text-align: center; */
+}
+
+.status-container {
+  position: absolute;
+  top: 5%;
+  right: -40%;
+  text-align: center;
+  background-color: #c7c7c7;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 10%;
+}
+
+.status-label {
+  font-size: 0.8em;
+  margin-bottom: 4px;
+  color: #000000;
 }
 
 .status-work {
-  position: absolute;
-  top: 10px;            /* tweak as you like */
-  right: -100px;          /* pins it to the right edge */
+  display: inline-block;
   padding: 5px 12px;
   border-radius: 12px;
   font-size: 0.9em;
   font-weight: bold;
   color: #fff;
-  background-color: #888; /* fallback while JS runs */
+  background-color: #c7c7c7;
 }
 
 .topnav {
@@ -142,6 +173,7 @@ img {
     top: 0;
     width: 100%;
     margin-bottom: 20%;
+    z-index: 10;
 }
 
 #letterm {
@@ -163,4 +195,11 @@ img {
 
 .topnav a:hover {
     color: #6e2aad;
+}
+
+.bear {
+  display: block;
+  width: 60px;
+  height: auto;
+  margin: 0 auto;
 }
