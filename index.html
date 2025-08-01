@@ -4,75 +4,60 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font -->
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+        <!-- snowstorm -->
+        <script src="assets/scripts/snowstorm.js"></script>
+        <script src="assets/scripts/work-status.js"></script>
     </head>
     <body>
         <!-- Top Navigation Bar -->
-        <div class="topnav" id="myTopnav">
+        <div class="topnav">
+            <a href="#Extracurricular">Games</a>
             <a href="#AboutMe">About Me</a>
-            <a href="#Extracurricular">Extracurriculars</a>
             <a href="#Home">Home</a>
 
-            <!-- <a href="https://momo-mollie.github.io/momo-page/">
-                <img src="assets/images/letterm.png" id="letterm" alt="MLogo" class="active"/>
-            </a> -->
             <img src= "assets/images/letterm.png" id="letterm" alt="MLogo" class="active"/>
-            
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <br>
-        <br>
-        <br>
-        <!-- Home Page -->
-        <div class="content-card" id="Home" style="background-color:#2d2d2d;">
-            <h1>Welcome to Mollie's Page</h1>
-            <img src="assets/images/willowpillow.png" alt="My Dog, Willow" class="willowpillow">
-            <div>
-                <p>Hello, I'm Mollie, I play video games and I also love sports.</p>
-                <p>I am a software engineer in the making at UNSW and I have quite a 
-                    few hobbies I've been working on and enjoying over the past few years!
-                </p>
-                </div>
-            </div>
-            <br>
-        <!-- Extracurricular Page -->
-        <div class="row" id="Extracurricular">
-            <br>
-            <div class="column left" style="background-color:#373636;">
-                <h2>My extracurriculars:</h2>
-                <p>Oztag</p>
-                <p>Volleyball</p>
-            </div>
-            <div class="column right" style="background-color:#2d2d2d;">
-                <h2>My Games!</h2>
-                <p>Valorant</p>
-                <p>Minecraft</p>
-                <p>Overwatch</p>
-                <p></p>
-            </div>
-            <br>
-        </div>
-        <br>
-        <br>
-        <!-- AboutMe Page -->
-        <div class="aboutMi" id="AboutMe" style="background-color:#2d2d2d;">
-            <div>
-                <p>Name: Mollie Norton</p>
-                <p>Age: 20 .-.</p>
-                <a href="https://www.unsw.edu.au/study/undergraduate/bachelor-of-commerce-computer-science" target="_blank">
-                    This is a link to my degree!
-                </a>
-                <br>
-                <br>
-                <img src="assets/images/meandfriend.jpg" alt="Me and my friend at UNSW" class="MeandFriend">
-                <p>A candid photo of me and my friend XD</p>
-            </div>
         </div>
         <br>
 
-        <!-- <img src="assets/images/meandfriend.jpg" width="600" height="800" alt="Me and my friend at uni"> -->
+        <!-- Home Page -->
+        <div class="content-card" id="Home">
+            <div class="status-work" id="work-status">!Error!</div>
+            
+            <h2>Welcome to Mollie's Page</h2>
+            <p>Hello! Enjoy this page that includes a little bit of everything about me :)</p>
+            <p>**note: still being developed and edited**</p>
+            <!-- <a href="https://www.unsw.edu.au/study/undergraduate/bachelor-of-commerce-computer-science" target="_blank">
+                    This is a link to my degree!
+                </a> -->
+        </div>
+
+        <!-- About Me Page -->
+        <div class="content-card" id="aboutMe">
+            <br>
+                <p>For starters, I'll introduce you to my pride and joy(s)...</p>
+                <div class="container">
+                    <img src="assets/images/archie.png" alt="a pic of archie" class="image">
+                    <div class="middle">
+                        <div class="text">My boy Archie</div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <img src="assets/images/willow.png" alt="a pic of archie" class="image">
+                    <div class="middle">
+                        <div class="text">My girl Willow</div>
+                    </div>
+                </div>
+
+            <!-- </div> -->
+        </div>
+        <br>
+        <!-- Games -->
 
     </body>
 </html>

@@ -1,19 +1,21 @@
 * {
     box-sizing: border-box;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 body {
-    /* background: linear-gradient(-45deg, #c1b2f2, #9254de, #f2c6ff, #C78CF6); */
-    background: rgb(81, 37, 143);
-    /* background-size: 400% 400%; */
-    /* animation: gradient 10s ease infinite; */
-    color: #ffffff;
+    background: rgb(228, 211, 251);
+    color: #000000;
     text-align: center;
     padding: 0px;
     margin: 0px;
 }
 
-a:link {
+/* a:link {
     color: white;
     background-color: transparent;
     text-decoration: none;
@@ -29,22 +31,63 @@ a:hover {
   color: rgb(210, 112, 129);
   background-color: transparent;
   text-decoration: underline;
-}
+} */
 
 h1 {
-    padding-top: 4em;
+    padding-top: 1em;
 }
 
 p {
-    margin: 2em 0;
+    margin: 1em;
 }
 
 img {
-    width: 40em;
-    max-width: 90%;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.aboutMi {
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 0.8;
+}
+
+.text {
+  background-color: #6165d3;
+  color: white;
+  font-size: 16px;
+  padding: 16px 24px;
+}
+
+.aboutMe {
     display: block;
     margin: auto;
     width: 50%;
@@ -62,47 +105,43 @@ img {
 
 .content-card {
     display: block;
+    position: relative;
     margin: auto;
+    margin-top: 60px;
     width: 50%;
     height: fit-content;
     max-width: 560px;
+    background-color: #c7c7c7;
   
     border-radius: 10%;
     padding-top: 10px;
     padding-right: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-left: 30px;
   
     text-align: center;
 }
 
-.column {
-    float: left;
-    padding: 10px;
-    height: 250px;
-}
-
-.left {
-    width: 25%;
-}
-  
-.right {
-    width: 75%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.status-work {
+  position: absolute;
+  top: 10px;            /* tweak as you like */
+  right: -100px;          /* pins it to the right edge */
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #888; /* fallback while JS runs */
 }
 
 .topnav {
     align-items: center;
-    background-color: #9254de;
+    background-color: #b88ced;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
+    margin-bottom: 20%;
 }
 
 #letterm {
@@ -116,28 +155,12 @@ img {
 .topnav a {
     float: right;
     display: flex;
-    color: #e0d8eb;
+    color: #000000;
     padding: 14px 16px;
     text-align: center;
     font-size: 17px;
 }
 
 .topnav a:hover {
-    color: #ffffff;
-  }
-
-.MeandFriend {
-    border-radius: 10%;
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    max-height: 600px;
-}
-
-.willowpillow {
-    border-radius: 10%;
-    width: 100%;
-    max-width: 200px;
-    height: 100%;
-    max-height: 200px;
+    color: #6e2aad;
 }
